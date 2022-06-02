@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WorkManagerDemo</string>
+    <string name="open_weather_api_key">5f339ecc01d51ce7ceee027cd11c2780</string>
 </resources>

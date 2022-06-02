@@ -4,15 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/irkutsk_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Температура в Иркутске: "/>
+
+    <TextView
+        android:id="@+id/irkutsk_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/irkutsk_label"
+        app:layout_constraintTop_toTopOf="@id/irkutsk_label"/>
+
+    <TextView
+        android:id="@+id/moscow_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/irkutsk_label"
+        app:layout_constraintTop_toBottomOf="@id/irkutsk_label"
+        android:text="Температура в Москве: "/>
+
+    <TextView
+        android:id="@+id/moscow_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/moscow_label"
+        app:layout_constraintTop_toTopOf="@id/moscow_label"/>
+
+    <TextView
+        android:id="@+id/london_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moscow_label"
+        app:layout_constraintLeft_toLeftOf="@id/moscow_label"
+        android:text="Температура в Лондоне: "/>
+
+    <TextView
+        android:id="@+id/london_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/london_label"
+        app:layout_constraintTop_toTopOf="@id/london_label"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
